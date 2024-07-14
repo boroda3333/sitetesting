@@ -1,0 +1,93 @@
+body{}.stiker-special{background-color:#dc3545;color:#ffffff}.stiker-upc{background-color:#007bff;color:#ffffff}.stiker-ean{background-color:#28a745;color:#ffffff}.stiker-jan{background-color:#ffc107;color:#343a40}.stiker-isbn{background-color:#17a2b8;color:#ffffff}.stiker-mpn{background-color:#343a40;color:#ffffff}/* top bar in header */
+#top { border-bottom:0!important; padding-bottom:0!important }
+#top > .container > .row > .col { text-align:right!important; margin-right: .5rem }
+
+/* category menu */
+.svg-menu-icon, .svg-submenu-icon { fill:var(--primary);display: block;margin:-2px 0;opacity:.75 }
+.svg-menu-icon.sale { fill:var(--danger) }
+.item-level-1.hover .svg-menu-icon, .item-level-2:hover .svg-submenu-icon { fill:var(--danger);opacity:1 }
+.level-arrow { display:none!important }
+.category-menu-item:not(.item-level-1):not(.item-level-2):not(.item-level-3) { opacity:.35 }
+#ftModalMenu .col-auto.border-left.d-lg-none { border:none!important; margin-right:.25rem }
+@media (min-width:992px) { 
+  #ftMenu [class*="list-level-2"].show { display:none } /* fix resize recombinate menu bug */
+} 
+
+/* main slide show on main page */
+[id*=ftSlideshow] > div.border { border:none!important }
+[id*=ftSlideshow] .btn-next, [id*=ftSlideshow] .btn-prev { box-shadow: 0 0 1px 1px rgba(0,0,0,.1)!important; opacity: 0; transition: opacity ease .2s }
+[id*=ftSlideshow]:hover .btn-next, [id*=ftSlideshow]:hover .btn-prev { opacity:.5 }
+[id*=ftSlideshow]:hover .btn-next:hover, [id*=ftSlideshow]:hover .btn-prev:hover { opacity:1 }
+[class*=main-slide-] p { max-width:280px }
+[class*=main-slide-] .image { max-height:240px }
+[class*=main-slide-] img { max-width:unset }
+.main-slide-1 { background-color:#fff8ec; border-color:#f1e1c6!important }
+.main-slide-1 .title { background: linear-gradient(272deg, var(--yellow) 35.5%, var(--dark) 69.9%) }
+.main-slide-2 { background-color: #f0f8ff;border-color:#d2e2f4!important }
+.main-slide-2 .title { background: linear-gradient(272deg, var(--primary) 35.5%, var(--dark) 69.9%) }
+[class*=main-slide-] .title {  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; text-fill-color: transparent }
+@media (min-width: 768px) {
+  [class*=main-slide-] [class*=col-] { height: 291px }
+  [class*=main-slide-] .image { max-height:unset }
+}
+
+/* additional slide show on main page */
+.ft-additional-position-3 .bg-light { height:291px }
+
+/* advantages on main page styling */
+.custom-blocks .col:nth-child(1) .custom-block { background-color:#f0f8ff57!important; border-color:#027bff38!important }
+.custom-blocks .col:nth-child(2) .custom-block { background-color:#e1566205!important; border-color:#e3525e38!important }
+.custom-blocks .col:nth-child(3) .custom-block { background-color:#50b46008!important; border-color:#4fb35f42!important }
+.custom-block .description { font-weight: 300 }
+
+/* category wall on main page */
+.category-item > .bg-white { background-color: var(--light) !important }
+.card-header, .card-footer { background-color: var(--light) }
+
+/* products carousels in main page */
+[id*=ftProductsCarousel] .card-footer.py-2 { padding-top:.25rem!important; padding-bottom:.35rem!important }
+[id*=ftProductsCarousel] .card-header .btn { box-shadow: none !important }
+[id*=ftCarousel] > div > .bg-white { background-color: var(--light) !important }
+
+#ftProductsCarousel_0 { border-color: #ffc00857!important; }
+#ftProductsCarousel_0 .card-header { background-color: #ffc00814!important; border-color: #ffc00857!important; }
+#ftProductsCarousel_0 .card-header .btn > svg { color: #fcce47 !important }
+
+#ftProductsCarousel_1 { border-color: #4fb35f42!important; }
+#ftProductsCarousel_1 .card-header { background-color: #50b46008!important; border-color: #4fb35f42!important; }
+#ftProductsCarousel_1 .card-header .btn > svg { color: #6faf7e !important }
+
+#ftProductsCarousel_2 { border-color: #027bff38!important; }
+#ftProductsCarousel_2 .card-header { background-color: #f0f8ff57!important; border-color: #027bff38!important; }
+#ftProductsCarousel_2 .card-header .btn > svg { color: #6aa2de !important }
+
+/* breadcrumbs */
+.breadcrumb { flex-wrap: nowrap !important; overflow: auto }
+.breadcrumb li { white-space: nowrap !important; }
+
+/* footer */
+.modal-open #footer-fixed-buttons { display:none!important }
+
+/* ocfilter */
+.ocfilter-mobile-handle .btn { margin-left: -47px!important; z-index: 9999; position: relative }
+.ocfilter-mobile-handle .btn svg{ fill: #cccccc }
+.ocf-offcanvas.ocfilter-mobile.active { z-index: 1040 }
+
+/* checkboxes */
+.custom-checkbox .custom-control-label::before { border-radius: .25rem }
+
+/* other */
+:root { --menu-btn-border-radius: .5rem !important }
+
+@media (max-width: 576px) { 
+  h1.h2 { font-size: 1.5rem } 
+  .mob-075em { font-size: 0.75em }
+}
+
+/* manufacturer list */
+#product-manufacturer h2 + .row > .col { flex: 0 0 auto; width: auto; max-width: 100% }
+
+/* mobile inputs no zoom */
+@media (max-width: 576px) { 
+  .form-control { font-size: 16px }
+}
